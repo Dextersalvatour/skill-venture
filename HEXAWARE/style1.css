@@ -1,0 +1,201 @@
+/* Apply global styles */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: url('imagebg.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Container for aligning the heading and login box */
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 600px;
+}
+
+
+/* Style for the heading */
+
+h1 {
+    margin-bottom: 100px;
+}
+
+
+/* Typewriting effect for the title */
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    0%,
+    100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+.title {
+    font-size: 65px;
+    color: #ffffff;
+    /* background: #000000; */
+    padding-top: 1px;
+    border-radius: 1px;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 0.15em solid black; */
+    animation: typing 2s steps(30, end) infinite, blink-caret .75s step-end infinite;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Style for the login box */
+
+.login-box {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+/* Optional: style for login form inside login box */
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.student-login h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.student-login {
+    text-align: center;
+}
+
+.register-btn {
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-group button {
+    width: 100%;
+}
+
+.btn-group p {
+    margin: 0 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.btn-group h2 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

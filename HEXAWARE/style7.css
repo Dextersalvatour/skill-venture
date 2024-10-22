@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+}
+
+header .top-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #2c3e50;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 8px;
+    /* filter: invert(1); */
+}
+
+.search-bar {
+    margin-right: 30px;
+    padding: 5px;
+    flex-grow: 1;
+    width: 250px;
+}
+
+.icon {
+    margin-right: 30px;
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+hr {
+    margin: 10px 0;
+}
+
+
+/* Scrollable Courses Section */
+
+.courses-scroll .scrolling-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    background-color: #2c3e50;
+}
+
+.course-item {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 200px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Hover effect for the scrolling courses */
+
+.course-item:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+/* Main Course List Section */
+
+.main-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.section-title {
+    color: #ffffff;
+    margin-bottom: 10px;
+    background-color: #2c3e50;
+}
+
+.courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.course {
+    padding: 50px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Hover effect for courses in the course list */
+
+.course:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+/* Button Styles */
+
+button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex: 1;
+    padding: 50px;
+    color: black;
+    font-size: large;
+}
+
+.footer-part {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.footer-part li {
+    cursor: pointer;
+    color: #2c3e50;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Hover effect for footer links */
+
+.footer-part li:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+}
+
+
+/* .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    margin: 0 20px;
+} */
+
+.social-menu {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.social-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.social-menu ul li {
+    margin: 0 10px;
+}
+
+.social-menu ul li a {
+    font-size: 54px;
+    display: block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-menu ul li a.github {
+    color: #000000;
+}
+
+.social-menu ul li a.instagram {
+    color: #E1306C;
+}
+
+.social-menu ul li a.linkedin {
+    color: #0077B5;
+}
+
+.social-menu ul li a.codepen {
+    color: #0077B5;
+}
+
+.social-menu ul li a:hover {
+    transform: translateY(-10%);
+    color: #000000;
+}
+
+
+/* Chatbot Icon Styling */
+
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#chatbot-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Chatbot Window Position */
+
+.chatbot {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+}

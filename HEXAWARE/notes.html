@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Venture - Notes & Videos</title>
+
+    <link rel="stylesheet" href="notes.css">
+</head>
+
+<body>
+
+
+    <div class="navbar">
+        <div class="logo">Skill Venture</div>
+        <input type="search" class="search-bar" placeholder="Search">
+        <div class="icon" id="home">
+            <img onclick="location.href='about us.html'" class="nav-icon" src="home.png" alt="Home">
+        </div>
+        <div class="icon" id="notes">
+            <img onclick=" location.href='notes.html'" class="nav-icon" src="notes.png" alt="Notes">
+        </div>
+        <div class="icon" id="course-completion">
+            <img onclick="location.href='homepage.html'" class="nav-icon" src="course.png" alt="Course Completion">
+        </div>
+        <div class="icon" id="profile">
+            <img class="nav-icon" src="profile.png" alt="Profile">
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="content">
+        <div id="notes-page">
+            <h1>Your Notes</h1>
+            <p>Here you will find notes related to your courses or trainer-uploaded content.</p>
+
+            <div id="notes-list">
+
+                <div class="note-item">
+                    <div class="note-box">
+                        <h3>Linux and Python Fundamentals</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <progress value="30" max="100"></progress>
+                        <span>30%</span>
+                    </div>
+                </div>
+
+
+                <div class="note-item">
+                    <div class="note-box">
+                        <h3>Data Wrangling with SQL</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <progress value="50" max="100"></progress>
+                        <span>50%</span>
+                    </div>
+                </div>
+
+
+                <div class="note-item">
+                    <div class="note-box">
+                        <h3>Data Science</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <progress value="80" max="100"></progress>
+                        <span>80%</span>
+                    </div>
+                </div>
+
+
+                <div class="note-item">
+                    <div class="note-box">
+                        <h3>Python with Data</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <progress value="80" max="100"></progress>
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Uploaded Videos</h1>
+        <div class="video-gallery">
+            <div class="video-list">
+
+                <div class="video-item">
+                    <h3>DATA-SCIENCE OVERVIEW</h3>
+                    <video controls>
+                        <source src="datascience.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="video-item">
+                    <h3>CYBER-SECURITY OVERVIEW</h3>
+                    <video controls>
+                        <source src="cybersecurity.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+
+                <div class="video-item">
+                    <h3>JAVA-FULL-STACK OVERVIEW</h3>
+                    <video controls>
+                        <source src="Java.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="notes.js"></script>
+    <script src="video.js.js"></script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Venture - Notes & Videos</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <button onclick="location.href='homepage.html'" class="back-btn" onclick="history.back()">⬅
+            
+        </div>
+
+
+    <div class="navbar">
+        <div class="logo">Skill Venture</div>
+        <input type="search" class="search-bar" placeholder="Search">
+        <div class="icon" id="home">
+            <img onclick="location.href='homepage.html'" class="nav-icon" src="home.png" alt="Home">
+        </div>
+        <div class="icon" id="notes">
+            <img class="nav-icon" src="notes.png" alt="Notes">
+        </div>
+        <div class="icon" id="course-completion">
+            <img class="nav-icon" src="course.png" alt="Course Completion">
+        </div>
+        <div class="icon" id="profile">
+            <img class="nav-icon" src="profile.png" alt="Profile">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="content">
+        <div id="notes-page">
+            <h1>Your Notes</h1>
+            <p>Here you will find notes related to your courses or trainer-uploaded content.</p>
+
+            <div id="notes-container">
+                <button class="scroll-btn left-btn" id="scroll-left">&lt;</button>
+            <div id="notes-list">
+                <div class="note-item">
+                    <div class="note-box">
+                        <h3>Introduction to HTML</h3>
+                        <p>This note covers the basics of HTML, structure, and tags.</p>
+                    </div>
+                    <div class="progress-bar">
+                        <progress value="30" max="100"></progress>
+                        <span>30%</span>
+                    </div>
+                </div>
+
+                <div class="note-item">
+                    <div class="note-box">
+                        <h3>JavaScript Basics</h3>
+                        <p>This note includes basic syntax, variables, and loops in JavaScript.</p>
+                    </div>
+                    <div class="progress-bar">
+                        <progress value="50" max="100"></progress>
+                        <span>50%</span>
+                    </div>
+                </div>
+
+                <div class="note-item">
+                    <div class="note-box">
+                        <h3>Data Science</h3>
+                        <p>An overview of data science processes, techniques, and tools.</p>
+                    </div>
+                    <div class="progress-bar">
+                        <progress value="80" max="100"></progress>
+                        <span>80%</span>
+                    </div>
+                </div>
+
+                <div class="note-item">
+                    <div class="note-box">
+                        <h3>Graphics Designing</h3>
+                        <p>Discover the world of animation and graphic design with our top-rated course.</p>
+                    </div>
+                    <div class="progress-bar">
+                        <progress value="65" max="100"></progress>
+                        <span>65%</span>
+                    </div>
+                </div>
+
+                <div class="note-item">
+                    <div class="note-box">
+                        <h3>C Programming</h3>
+                        <p>Explore C programming courses that cover low-level programming, memory management, and algorithms.</p>
+                    </div>
+                    <div class="progress-bar">
+                        <progress value="55" max="100"></progress>
+                        <span>55%</span>
+                    </div>
+                </div>
+
+                <div class="note-item">
+                    <div class="note-box">
+                        <h3>Data Mining</h3>
+                        <p>Learn how to discover patterns and insights from large datasets.</p>
+                    </div>
+                    <div class="progress-bar">
+                        <progress value="50" max="100"></progress>
+                        <span>50%</span>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-btn right-btn" id="scroll-right">&gt;</button>
+        </div>
+        </div>
+        </div>
+
+        <div class="content">
+            <h1>Uploaded Videos</h1>
+            <div class="video-gallery">
+                <div class="video-list">
+                    <div class="video-item">
+                        <h3>DATA-SCIENCE OVERVIEW</h3>
+                        <video controls>
+                        <source src="datascience.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </div>
+
+                    <div class="video-item">
+                        <h3>CYBER-SECURITY OVERVIEW</h3>
+                        <video controls>
+                        <source src="cybersecurity.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </div>
+
+                    <div class="video-item">
+                        <h3>JAVA-FULL-STACK OVERVIEW</h3>
+                        <video controls>
+                        <source src="java.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="notes.js"></script>
+        <script src="video.js"></script>
+</body>
+
+</html> -->
